@@ -1,0 +1,33 @@
+[global]
+
+# Konfigurasi untuk deployment
+dataFrameSerialization = "legacy"
+
+[server]
+
+# Port untuk development lokal
+port = 8501
+
+# Mengaktifkan CORS untuk deployment
+enableCORS = false
+enableXsrfProtection = false
+
+# Ukuran maksimum file upload (dalam MB)
+maxUploadSize = 200
+
+# Timeout untuk koneksi
+maxMessageSize = 200
+
+[browser]
+
+# Otomatis buka browser saat development lokal
+gatherUsageStats = false
+
+[theme]
+
+# Tema aplikasi
+primaryColor = "#00CC00"
+backgroundColor = "#FFFFFF"
+secondaryBackgroundColor = "#F0F2F6"
+textColor = "#262730"
+font = "sans serif"
