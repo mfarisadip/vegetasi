@@ -1,5 +1,15 @@
 [global]
 
+# Konfigurasi global untuk optimasi performa
+developmentMode = false
+logLevel = "error"
+showWarningOnDirectExecution = false
+
+# Sembunyikan elemen UI Streamlit
+hideTopBar = true
+hideFooter = true
+hideMainMenu = true
+
 # Konfigurasi untuk deployment
 dataFrameSerialization = "legacy"
 
@@ -22,6 +32,7 @@ maxMessageSize = 200
 
 # Otomatis buka browser saat development lokal
 gatherUsageStats = false
+showErrorDetails = false
 
 [theme]
 

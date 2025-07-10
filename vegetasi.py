@@ -22,6 +22,48 @@ st.set_page_config(
     layout="wide"
 )
 
+# Load custom CSS untuk menyembunyikan branding Streamlit
+def load_css():
+    try:
+        with open('style.css') as f:
+            st.markdown(f'<style>{f.read()}</style>', unsafe_allow_html=True)
+    except FileNotFoundError:
+        # Fallback CSS jika file tidak ditemukan
+        st.markdown("""
+        <style>
+            /* Sembunyikan footer "Made with Streamlit" */
+            .css-1d391kg, .css-1v0mbdj, .css-1rs6os, .css-17ziqus,
+            footer[data-testid="stFooter"], .css-164nlkn, .css-1outpf7 {
+                display: none !important;
+                visibility: hidden !important;
+            }
+            
+            /* Sembunyikan menu hamburger */
+            #MainMenu {
+                visibility: hidden !important;
+            }
+            
+            /* Sembunyikan header Streamlit */
+            header[data-testid="stHeader"] {
+                display: none !important;
+            }
+            
+            /* Sembunyikan semua link ke streamlit.io */
+            a[href*="streamlit.io"] {
+                display: none !important;
+            }
+            
+            /* Custom styling untuk aplikasi */
+            .main .block-container {
+                padding-top: 1rem !important;
+                padding-bottom: 1rem !important;
+            }
+        </style>
+        """, unsafe_allow_html=True)
+
+# Load CSS
+load_css()
+
 st.title("🛰️ Klasifikasi Vegetasi dari Citra Sentinel-2")
 st.markdown("**Ekstraksi dan Klasifikasi Informasi Vegetasi menggunakan Band B4 (Red) dan B8 (NIR)**")
 

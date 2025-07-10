@@ -10,6 +10,15 @@ Aplikasi web untuk ekstraksi dan klasifikasi informasi vegetasi menggunakan Band
 - 📊 **Visualisasi Interaktif**: Grafik dan peta hasil klasifikasi menggunakan Plotly
 - 📈 **Evaluasi Kualitas**: Silhouette Score, Calinski-Harabasz Index, Davies-Bouldin Index
 
+## 🎨 Fitur Optimasi
+
+- **Konfigurasi Streamlit**: File `.streamlit/config.toml` untuk pengaturan optimal
+- **Tema Kustom**: Tema gelap dengan warna hijau untuk aplikasi vegetasi
+- **Performa**: Konfigurasi cache dan optimasi loading
+- **Responsif**: Tampilan yang optimal di berbagai ukuran layar
+- **Clean UI**: Menghilangkan branding "Made with Streamlit" dan elemen UI yang tidak perlu
+- **Custom Styling**: File `style.css` untuk styling yang lebih profesional
+
 ## Instalasi Lokal
 
 1. Clone atau download repository ini

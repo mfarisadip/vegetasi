@@ -1,0 +1,279 @@
+/* Custom CSS untuk Aplikasi Klasifikasi Vegetasi */
+/* Menghilangkan branding Streamlit dan memperbaiki tampilan */
+
+/* ===== SEMBUNYIKAN ELEMEN STREAMLIT ===== */
+
+/* Sembunyikan footer "Made with Streamlit" */
+.css-1d391kg, 
+.css-1v0mbdj, 
+.css-1rs6os, 
+.css-17ziqus,
+footer[data-testid="stFooter"],
+.css-164nlkn,
+.css-1outpf7 {
+    display: none !important;
+    visibility: hidden !important;
+}
+
+/* Sembunyikan menu hamburger */
+#MainMenu {
+    visibility: hidden !important;
+}
+
+/* Sembunyikan header Streamlit */
+header[data-testid="stHeader"] {
+    display: none !important;
+    height: 0px !important;
+}
+
+/* Sembunyikan toolbar */
+.css-14xtw13.e8zbici0 {
+    display: none !important;
+}
+
+/* Sembunyikan "Deploy" button dan link */
+.css-1rs6os .css-17ziqus,
+a[href*="streamlit.io"],
+.css-1outpf7 {
+    display: none !important;
+}
+
+/* ===== LAYOUT DAN SPACING ===== */
+
+/* Adjust main container */
+.main .block-container {
+    padding-top: 1rem !important;
+    padding-bottom: 1rem !important;
+    max-width: 100% !important;
+}
+
+/* Sidebar styling */
+.css-1d391kg {
+    padding-top: 1rem !important;
+}
+
+/* Remove extra padding */
+.css-18e3th9 {
+    padding-top: 0rem !important;
+}
+
+/* ===== CUSTOM STYLING ===== */
+
+/* Title styling */
+h1 {
+    color: #2E7D32 !important;
+    font-weight: bold !important;
+    margin-bottom: 1rem !important;
+}
+
+/* Subtitle styling */
+.markdown-text-container p {
+    color: #424242 !important;
+    font-size: 1.1rem !important;
+}
+
+/* Info boxes styling */
+.stAlert > div {
+    border-radius: 8px !important;
+}
+
+/* Success messages */
+.stSuccess > div {
+    background-color: #E8F5E8 !important;
+    border-left: 4px solid #4CAF50 !important;
+}
+
+/* Info messages */
+.stInfo > div {
+    background-color: #E3F2FD !important;
+    border-left: 4px solid #2196F3 !important;
+}
+
+/* Warning messages */
+.stWarning > div {
+    background-color: #FFF3E0 !important;
+    border-left: 4px solid #FF9800 !important;
+}
+
+/* Error messages */
+.stError > div {
+    background-color: #FFEBEE !important;
+    border-left: 4px solid #F44336 !important;
+}
+
+/* Button styling */
+.stButton > button {
+    background-color: #4CAF50 !important;
+    color: white !important;
+    border: none !important;
+    border-radius: 6px !important;
+    padding: 0.5rem 1rem !important;
+    font-weight: bold !important;
+    transition: all 0.3s ease !important;
+}
+
+.stButton > button:hover {
+    background-color: #45a049 !important;
+    transform: translateY(-1px) !important;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2) !important;
+}
+
+/* Primary button styling */
+.stButton > button[kind="primary"] {
+    background-color: #2E7D32 !important;
+}
+
+.stButton > button[kind="primary"]:hover {
+    background-color: #1B5E20 !important;
+}
+
+/* Sidebar button styling */
+.css-1d391kg .stButton > button {
+    width: 100% !important;
+    margin-bottom: 0.5rem !important;
+}
+
+/* Metrics styling */
+.metric-container {
+    background-color: #F5F5F5 !important;
+    padding: 1rem !important;
+    border-radius: 8px !important;
+    border-left: 4px solid #4CAF50 !important;
+}
+
+/* DataFrame styling */
+.stDataFrame {
+    border-radius: 8px !important;
+    overflow: hidden !important;
+}
+
+/* Plotly chart container */
+.js-plotly-plot {
+    border-radius: 8px !important;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1) !important;
+}
+
+/* Expander styling */
+.streamlit-expanderHeader {
+    background-color: #E8F5E8 !important;
+    border-radius: 6px !important;
+}
+
+/* File uploader styling */
+.stFileUploader > div {
+    border: 2px dashed #4CAF50 !important;
+    border-radius: 8px !important;
+    padding: 1rem !important;
+    background-color: #F9F9F9 !important;
+}
+
+/* Checkbox styling */
+.stCheckbox > label {
+    font-weight: bold !important;
+    color: #2E7D32 !important;
+}
+
+/* Slider styling */
+.stSlider > div > div > div {
+    color: #4CAF50 !important;
+}
+
+/* Number input styling */
+.stNumberInput > div > div > input {
+    border: 2px solid #E0E0E0 !important;
+    border-radius: 6px !important;
+}
+
+.stNumberInput > div > div > input:focus {
+    border-color: #4CAF50 !important;
+    box-shadow: 0 0 0 2px rgba(76, 175, 80, 0.2) !important;
+}
+
+/* Selectbox styling */
+.stSelectbox > div > div {
+    border-radius: 6px !important;
+}
+
+/* Progress bar styling */
+.stProgress > div > div {
+    background-color: #4CAF50 !important;
+}
+
+/* Spinner styling */
+.stSpinner > div {
+    border-top-color: #4CAF50 !important;
+}
+
+/* ===== RESPONSIVE DESIGN ===== */
+
+@media (max-width: 768px) {
+    .main .block-container {
+        padding-left: 1rem !important;
+        padding-right: 1rem !important;
+    }
+    
+    .css-1d391kg {
+        padding-left: 1rem !important;
+        padding-right: 1rem !important;
+    }
+}
+
+/* ===== CUSTOM CLASSES ===== */
+
+/* Class untuk highlight box */
+.highlight-box {
+    background-color: #E8F5E8 !important;
+    padding: 1rem !important;
+    border-radius: 8px !important;
+    border-left: 4px solid #4CAF50 !important;
+    margin: 1rem 0 !important;
+}
+
+/* Class untuk warning box */
+.warning-box {
+    background-color: #FFF3E0 !important;
+    padding: 1rem !important;
+    border-radius: 8px !important;
+    border-left: 4px solid #FF9800 !important;
+    margin: 1rem 0 !important;
+}
+
+/* Class untuk info box */
+.info-box {
+    background-color: #E3F2FD !important;
+    padding: 1rem !important;
+    border-radius: 8px !important;
+    border-left: 4px solid #2196F3 !important;
+    margin: 1rem 0 !important;
+}
+
+/* ===== HIDE STREAMLIT BRANDING COMPLETELY ===== */
+
+/* Additional selectors untuk memastikan footer tersembunyi */
+footer,
+.css-1outpf7,
+.css-164nlkn,
+.css-1rs6os,
+.css-17ziqus,
+[data-testid="stFooter"],
+.reportview-container .main footer,
+.css-1d391kg .css-1outpf7 {
+    display: none !important;
+    visibility: hidden !important;
+    height: 0px !important;
+    position: absolute !important;
+    left: -9999px !important;
+}
+
+/* Hide any link that contains streamlit.io */
+a[href*="streamlit.io"],
+a[href*="github.com/streamlit"] {
+    display: none !important;
+    visibility: hidden !important;
+}
+
+/* Hide "Made with Streamlit" text */
+*:contains("Made with Streamlit"),
+*:contains("Streamlit") {
+    display: none !important;
+}
